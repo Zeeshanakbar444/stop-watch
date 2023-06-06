@@ -7,30 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stop watch</title>
     <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
-  
-
-    <div>
-        <h1>Stop Watch</h1>
+    <div class="hDiv">
+        <h1 class="h1">STOP WATCH</h1>
         <div class="main">
-            <h1 id="mint">00</h1>
-            <h1 id="sec">00</h1>
-            <h1 id="msec">00</h1>
+
+            <div>
+                <h1 id="mintElement">00</h1>
+                <h2>mint</h2>
+            </div>
+            <div>
+                <h1 id="secElement">00</h1>
+                <h2>sec</h2>
+            </div>
+            <div>
+                <h1 id="msecElement">00</h1>
+                <h2>msec</h2>
+            </div>
         </div>
-        <div class="btn">
-            <button onclick="start()">Start</button>
-            <button onclick="pause()">Pause</button>
-            <button onclick="restart()">Restart</button>
-        </div>
 
 
- 
+    </div>
 
-
-        <script src="./app.js"></script>
+    <div class="btn">
+        <button id="startBtn" onclick="start()">START</button>
+        <button id="stopBtn" onclick="stopInt()">STOP</button>
+        <button id="resetBtn" onclick="reset()">RESET</button>
+    </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
